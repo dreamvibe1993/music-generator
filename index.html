@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Генератор музыки</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="musical-note.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="root">
+      <div class="announcement">
+        <h1>Ты музыкант?</h1>
+        <p>... и тебе надоело постоянно придумывать песни? </p>
+        <p>Ты хочешь всё быстро и сразу?</p>
+        <p>ТЫ ЗАШЕЛ ПО АДРЕСУ!</p>
+        <p>
+          Представляем тебе уникальный генератор аккордов!
+          Этот малыш умеет выдавать последовательность аккордов, а также мелодию, которая покорит любое сердце.
+          Вам нужно лишь выбрать жанр и тональность, и нажать кнопку: наш алгоритм сгенерирует для вас убийственный хит.
+          СКОРЕЕ ПОПРОБУЙТЕ!
+        </p>
+      </div>
+      <div class="generator">
+        <div class="genres">
+          <h2>Жанр</h2>
+          <p>Выберите жанр</p>
+          <select id='genreSelect' class="genres_select" name="genres">
+            <option value="pop">Pop</option>
+            <option value="jazz">Jazz</option>
+          </select>
+        </div>
+        <div class="scale">
+          <h2>Тональность</h2>
+          <p>Выберите тональность</p>
+          <select id='scaleSelect' class="scale_select" name="genres">
+            <option value="cMajor">C Major</option>
+          </select>
+        </div>
+        <div class="chordsquantity">
+          <h2>Количество аккордов</h2>
+          <p>Введите количество аккордов в одном такте</p>
+          <input id='chordsQuantity' type="text" name="tempo" placeholder="Введи!">
+        </div>
+        <div class="tempo">
+          <h2>Темп</h2>
+          <p>Введите диапазон значений темпа</p>
+          <input id='tempoMin' type="text" name="tempo" placeholder="Минимум">
+          <input id='tempoMax' type="text" name="tempo" placeholder="Максимум">
+        </div>
+        <div class="letsgo">
+          <p>
+            <input id='generateMelody' type="checkbox" name="" value="">Сгенерировать мелодию?
+          </p>
+          <input id='melodyNotesQuantity' class='none' type="text" name="" placeholder="Введите количество нот в такте">
+          <button type="button" id="makeThisHappen" name="button"><h3>ПОЕХАЛИ</h3></button>
+        </div>
+      </div>
+      <div class="result none">
+        <h1>Молодец!</h1>
+        <h3>ВАША ПЕСНЯ:</h3>
+        <p>Аккорды: <strong id='resultChords'></strong></p>
+        <p>Мелодия (ноты): <strong id='resultMelody'></strong></p>
+        <p>Темп: <strong id='resultTempo'></strong> уд. в минуту</p>
+        <button id='resultClose' type="button" name="button">ЗАКРЫТЬ</button>
+      </div>
+      <div id='veil' class="veil none">
+
+      </div>
+    </div>
+    <script type="text/javascript" src='code.js'></script>
+  </body>
+</html>

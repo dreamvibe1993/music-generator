@@ -1,0 +1,83 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.none {display: none}
+.root {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.announcement,
+.genres,
+.scale, .tempo, .result, .chordsquantity {
+  text-align: center;
+}
+
+.genres_select, .scale_select,
+.chordsquantity input,
+#melodyNotesQuantity {
+  width: 100%;
+  height: 30px;
+}
+#melodyNotesQuantity {
+   margin-bottom: 15px;
+ }
+.tempo input {
+  height: 30px;
+}
+.letsgo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.letsgo button{
+  border: none;
+  height: 60px;
+  width: 40%;
+  border-radius: 5px;
+  background: linear-gradient(to top, rgb(255, 99, 99), rgb(207, 163, 106));
+  font-weight: bold;
+}
+
+#resultClose {
+  border: none;
+  height: 40px;
+  width: 40%;
+  border-radius: 5px;
+  background: rgb(6,191,215);
+  background: linear-gradient(173deg, rgba(6,191,215,1) 0%, rgba(2,147,176,1) 100%);
+  font-weight: bold;
+}
+.letsgo button:hover {
+  background: linear-gradient(to top, rgb(227, 89, 89), rgb(181, 142, 92));
+}
+#resultClose:hover{
+  background: rgb(5,165,186);
+  background: linear-gradient(173deg, rgba(5,165,186,1) 0%, rgba(2,123,147,1) 100%);
+}
+
+.result {
+  position: fixed;
+  top: 30%;
+  left: auto;
+  width: 40%;
+  height: 300px;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 100;
+}
+.veil {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 99;
+}
