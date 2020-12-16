@@ -73,7 +73,6 @@ makeThisHappen.onclick = () => {
   }
   resultMelody.innerText = melody.join(', ');
   toggleHandler()
-console.log(progression)
 }
 veil.onclick = () => {
   toggleHandler()
