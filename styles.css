@@ -12,6 +12,7 @@ body {
   border: 1px solid #ccc;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .announcement,
 .genres,
 .scale, .tempo, .result, .chordsquantity {
@@ -72,12 +73,26 @@ body {
   border: 1px solid #ccc;
   z-index: 100;
 }
+@media screen and (width: 375px) {
+  .root {
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .result {
+    width: 100%;
+  }
+}
 .veil {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, .5);
   z-index: 99;
 }
