@@ -75,16 +75,18 @@ body {
 }
 @media screen and (max-width: 400px) {
   .root {
+    margin: 0;
     border: none;
     box-shadow: none;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
+    box-sizing: border-box;
   }
   .result {
-    width: 100%;
+    width: 100vw;
   }
 }
 .veil {
