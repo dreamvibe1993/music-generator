@@ -73,7 +73,7 @@ body {
   border: 1px solid #ccc;
   z-index: 100;
 }
-@media screen and (width: 375px) {
+@media screen and (max-width: 400px) {
   .root {
     border: none;
     box-shadow: none;
